@@ -1,0 +1,71 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+*.venv
+
+# Django-related files
+*.log
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static/
+
+# Secret settings (like environment variables)
+.env
+.env.local
+.env.*.example
+
+# Migrations (optional: if you want to keep them, remove this)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Compiled code
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# macOS / Linux system files
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies (if using React/Vue frontend)
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Docker
+docker-compose.override.yml
+
+# Gunicorn logs
+gunicorn.log
+gunicorn.error.log
+
+# Celery & Background Tasks
+celerybeat-schedule
+*.pid
+
+# VS Code
+.vscode/
+
+# PyCharm
+*.idea/
+
+# Pycharm & VSCode debug configs
+*.launch.json
+*.code-workspace
