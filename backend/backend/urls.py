@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from blog.views import register, login, posts, post_detail
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,3 +26,5 @@ urlpatterns = [
     path("posts/", posts),
     path("posts/<int:post_id>/", post_detail),
 ]
+
+urlpatterns+=staticfiles_urlpatterns()
